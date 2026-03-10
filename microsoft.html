@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM of Microsoft</title>
+    <style>
+          body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+       
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:10px 20px;
+            position:fixed;
+            width:100%;
+            background:white;
+          
+        
+         }
+       
+        
+         .logo img{
+            width:100px;
+        }
+      
+       .btn-a{
+           display:flex;
+            margin: 0 15px;
+            text-decoration:none;
+            color:white;
+            font-weight: 300;        
+            position:sticky;
+            align-items:center;
+            margin-right:300px;
+            gap:20px;
+            white-space:nowrap;
+           
+            }
+        .btn-a a{
+            text-decoration:none;
+            color:black;
+            font-size:14px;
+            display:flex;
+          }
+
+       .btn-a a:hover{
+        text-decoration:underline;
+         }
+        #imgm{
+            width:1500px;
+            height:600px;
+        }
+        .c{
+            width:500px;
+            height:200px;
+            position:absolute;
+            top: 400px;
+            left:10px;
+            
+        }
+        button{
+            background-color: blue;
+            width:300px;
+            height:50px;
+            font-size:15px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="https://www.enableme.ch/countrys/switzerland/sponsors-partner/logos/microsoft.jpg" width="80px" height="80px">
+    </div>
+    <div class="btn-a">
+        <a href="#">Microsoft 365</a>
+        <a href="#">Teams</a>
+        <a href="#">Copilot</a>
+        <a href="#">windows</a>
+        <a href="#">Surface</a>
+        <a href="#">Xbox</a>
+        <a href="#">support</a>
+        <a href="#">Software</a>
+        <a href="#">PCs&Devices</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Business</a>
+        <a href="#">developer&IT</a>
+        <a href="#">Other</a>
+        <a href="#">View Sitemap</a>
+        <a href="#">search</a>
+        <a href="#">cart</a>
+        </div>
+        </header>
+        <h1>Create an image after 5 sec's</h1>
+        <div id="imageContainer">
+            <img id="imgm" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Icon-Bounce-Premium:VP2-859x540" alt="">
+        </div>
+        <div class="c">
+             <h1>Microsoft 365</h1>
+             <p>Introducing Microsoft 365 Premiun with our highest usage limits and exclusive copilot features for AI power users.</p>
+             <button>Discover Microsoft 365 Premium</button>
+        </div>
+        <script>
+         let img=document.getElementById("imgm");
+        setTimeout(function () {
+        img.src = "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Icon-Bounce-Premium:VP2-859x540";
+        }, 5000);
+
+        setTimeout(function () {
+        img.src = "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP2-859x540";
+        }, 2000);
+</script>
+
+
+      
+</body>
+</html>
